@@ -59,7 +59,7 @@ public class CourseController {
 		return "enrolment";
 	}
 
-	@RequestMapping(value = "/doenrolment", method = RequestMethod.POST)
+	@RequestMapping(value = "/enrolment", method = RequestMethod.POST)
 	public String enrolment(Model model, @Valid Course course, BindingResult result) {
 
 		if (result.hasErrors()) {

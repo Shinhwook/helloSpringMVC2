@@ -30,7 +30,7 @@
 		<security:intercept-url pattern="/enrolment"				access="permitAll" />
 		<security:intercept-url pattern="/enrolmentComlete"			access="permitAll" />
 		<security:intercept-url pattern="/semesterSearch"			access="permitAll" />
-		<security:intercept-url pattern="/doenrolment"				access="permitAll" />
+		<security:intercept-url pattern="/enrolment"				access="permitAll" />
 		<security:intercept-url pattern="/classificationSearch"		access="permitAll" />
 		<security:intercept-url pattern="/detailView2013_1"			access="permitAll" />
 		<security:intercept-url pattern="/detailView2013_2"			access="permitAll" />

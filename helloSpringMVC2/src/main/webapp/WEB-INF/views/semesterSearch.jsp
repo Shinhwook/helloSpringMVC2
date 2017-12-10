@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-    
-    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+	pageEncoding="UTF-8"%>
+
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -25,14 +25,12 @@
 		<tr>
 			<td>2013</td>
 			<td>1</td>
-			<td><c:set var="sum" value="0"></c:set> <c:forEach var="course"
-					items="${courses}">
+			<td><c:set var="sum" value="0"></c:set> <c:forEach var="course"	items="${courses}">
 					<c:if test="${course.year==2013&&course.semester==1}">
 						<c:set var="sum" value="${sum+course.grade}"></c:set>
 					</c:if>
 				</c:forEach> <c:out value="${sum}"></c:out></td>
-			<td><a
-				href="${pageContext.request.contextPath}/detailView2013_1">링크</a></td>
+			<td><ahref="${pageContext.request.contextPath}/detailView2013_1">링크</a></td>
 		</tr>
 
 		<tr>

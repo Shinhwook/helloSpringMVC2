@@ -12,7 +12,6 @@ public class CourseMapper implements RowMapper<Course> {
 	@Override
 	public Course mapRow(ResultSet rs, int rowNum) throws SQLException {
 
-		// TODO Auto-generated method stub
 		Course course = new Course();
 
 		course.setYear(rs.getInt("year"));

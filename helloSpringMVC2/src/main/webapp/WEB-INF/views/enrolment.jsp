@@ -13,7 +13,7 @@
 	<hr>
 
 	<sf:form method="post"
-		action="${pageContext.request.contextPath}/doenrolment"
+		action="${pageContext.request.contextPath}/enrolment"
 		modelAttribute="course">
 		<table class="formtable">
 			<tr>
