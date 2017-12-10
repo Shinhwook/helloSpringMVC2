@@ -19,7 +19,8 @@
 			<tr>
 				<td class="label">년도 :</td>
 				<td><sf:input class="control" path="year" type="text"
-						value="2017" /><br /> <sf:errors cssClass="error" path="year"></sf:errors></td>
+						value="2017" /><br /> <sf:errors cssClass="error" path="year">
+						</sf:errors></td>
 			</tr>
 			<tr>
 				<td class="label">학기 :</td>
