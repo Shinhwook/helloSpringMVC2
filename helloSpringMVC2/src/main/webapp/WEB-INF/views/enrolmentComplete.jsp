@@ -11,9 +11,9 @@
 <body>
 	<h3>수강 신청이 완료되었습니다.</h3>
 
-	<a href="${pageContext.request.contextPath}/enrolment">수강신청 페이지로	돌아가기</a>
+	<a href="${pageContext.request.contextPath}/enrolment">수강신청 페이지로 return</a>
 	<br>
-	<a href="${pageContext.request.contextPath}/">처음 화면으로 돌아가기</a>
+	<a href="${pageContext.request.contextPath}/"> 처음으로 return </a>
 	<br>
 
 </body>

@@ -23,6 +23,7 @@
 		<c:if test="${not empty errorMsg}">
 			<div style="color: #ff0000"><h3>${errorMsg}</h3>
 			</div>
+			
 		</c:if>
 
 		<table>
@@ -35,8 +36,7 @@
 				<td><input type='password' name='password' /></td>
 			</tr>
 			<tr>
-				<td colspan='2'><input name="submit" type="submit"
-					value="Login" /></td>
+				<td colspan='2'><input name="submit" type="submit" value="Login"></td>
 			</tr>
 			<input type="hidden" name="${_csrf.parameterName}"value="${_csrf.token}" />
 		</table>

@@ -34,13 +34,12 @@ public class CourseController {
 		return "semesterSearch";
 	}
 
-	// 이수 구분별 학점 내역
 	@RequestMapping("/classificationSearch")
 	public String classificationSearch(Model model) {
 		int sum = 0;
 
 		sum = courseService.getGrades("교필") + courseService.getGrades("핵교") + courseService.getGrades("전지")
-				+ courseService.getGrades("전기") + courseService.getGrades("전선") ;
+				+ courseService.getGrades("전기") + courseService.getGrades("전선");
 		HashMap<String, Integer> grades = new HashMap<String, Integer>();
 		grades.put("교필", courseService.getGrades("교필"));
 		grades.put("핵교", courseService.getGrades("핵교"));

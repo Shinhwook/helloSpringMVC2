@@ -24,7 +24,7 @@ public class CourseDAO {
 		return jdbcTemplateObject.queryForObject(sqlStatement, Integer.class);
 	}
 
-	// querying and returning single objects
+
 
 	public Course getCourse(String subjectCode) {
 		String sqlStatement = "select * from courses where subjectCode=?";
@@ -32,21 +32,21 @@ public class CourseDAO {
 		return jdbcTemplateObject.queryForObject(sqlStatement, new Object[] { subjectCode }, new CourseMapper());
 	}
 
-	// querying and returning multiple objects
+
 	public List<Course> getCourses() {
 		String sqlStatement = "select * from courses";
 
 		return jdbcTemplateObject.query(sqlStatement, new CourseMapper());
 	}
 
-	// 특정 년도 학기별 조회
+
 	public List<Course> getCoursesDetail(int year, int semester) {
 		String sqlStatement = "select * from courses where year=? and semester=?";
 
 		return jdbcTemplateObject.query(sqlStatement, new Object[] { year, semester }, new CourseMapper());
 	}
 
-	// 이수 구분별 학점 합 조회
+
 	public int getGradebyClassification(String classification) {
 		String sqlStatement = "select sum(grade) from courses where classification=?";
 		

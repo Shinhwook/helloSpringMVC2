@@ -30,7 +30,7 @@
 						<c:set var="sum" value="${sum+course.grade}"></c:set>
 					</c:if>
 				</c:forEach> <c:out value="${sum}"></c:out></td>
-			<td><ahref="${pageContext.request.contextPath}/detailView2013_1">링크</a></td>
+			<td><a href="${pageContext.request.contextPath}/detailView2013_1">링크</a></td>
 		</tr>
 
 		<tr>
@@ -42,8 +42,7 @@
 						<c:set var="sum" value="${sum+course.grade}"></c:set>
 					</c:if>
 				</c:forEach> <c:out value="${sum}"></c:out></td>
-			<td><a
-				href="${pageContext.request.contextPath}/detailView2013_2">링크</a></td>
+			<td><a	href="${pageContext.request.contextPath}/detailView2013_2">링크</a></td>
 		</tr>
 
 		<tr>
@@ -55,8 +54,7 @@
 						<c:set var="sum" value="${sum+course.grade}"></c:set>
 					</c:if>
 				</c:forEach> <c:out value="${sum}"></c:out></td>
-			<td><a
-				href="${pageContext.request.contextPath}/detailView2016_1">링크</a></td>
+			<td><a	href="${pageContext.request.contextPath}/detailView2016_1">링크</a></td>
 		</tr>
 
 		<tr>
@@ -68,8 +66,7 @@
 						<c:set var="sum" value="${sum+course.grade}"></c:set>
 					</c:if>
 				</c:forEach> <c:out value="${sum}"></c:out></td>
-			<td><a
-				href="${pageContext.request.contextPath}/detailView2016_2">링크</a></td>
+			<td><a	href="${pageContext.request.contextPath}/detailView2016_2">링크</a></td>
 		</tr>
 
 		<tr>
@@ -81,8 +78,7 @@
 						<c:set var="sum" value="${sum+course.grade}"></c:set>
 					</c:if>
 				</c:forEach> <c:out value="${sum}"></c:out></td>
-			<td><a
-				href="${pageContext.request.contextPath}/detailView2017_1">링크</a></td>
+			<td><a href="${pageContext.request.contextPath}/detailView2017_1">링크</a></td>
 		</tr>
 
 		<tr>
@@ -94,8 +90,7 @@
 						<c:set var="sum" value="${sum+course.grade}"></c:set>
 					</c:if>
 				</c:forEach> <c:out value="${sum}"></c:out></td>
-			<td><a
-				href="${pageContext.request.contextPath}/detailView2017_2">링크</a></td>
+			<td><a href="${pageContext.request.contextPath}/detailView2017_2">링크</a></td>
 		</tr>
 
 

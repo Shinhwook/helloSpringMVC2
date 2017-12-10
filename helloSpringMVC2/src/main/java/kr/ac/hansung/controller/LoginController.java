@@ -11,8 +11,7 @@ public class LoginController {
 	@RequestMapping("/login")
 	public String showLogin(@RequestParam(value = "error", required = false) String error,
 
-			@RequestParam(value = "logout", required = false) String logout, 
-			Model model) {
+			@RequestParam(value = "logout", required = false) String logout, Model model) {
 
 		if (error != null) {
 

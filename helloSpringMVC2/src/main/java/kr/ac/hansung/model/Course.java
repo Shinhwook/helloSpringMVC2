@@ -19,26 +19,21 @@ import lombok.ToString;
 public class Course {
 	
 	
-	@Min(value=2017,message="수강 년도는 2017년 입니다.")
-	@Max(value=2017,message="수강 년도는 2017년 입니다.")
+	@Min(value=2017,message="수강 년도는 2018년 입니다.")
+	@Max(value=2018,message="수강 년도는 2018년 입니다.")
 	int year;
 	
 	@Min(value=1,message="1또는 2학기 이어야만 합니다(현재 1학기)")
 	@Max(value=2,message="1또는 2학기 이어야만 합니다(현재 1학기)")
 	int semester;
 	
-	@Size(min=7,max=7,message="Name must be 7 chars < ex. CSE0023 >")
-	@NotEmpty(message="The subjectCode cannot be empty")
+	@Size(min=7,max=7,message=" < ex. CSE0000 >")
 	String subjectCode;
-	
-	@NotEmpty(message="The subject cannot be empty")
 	String subject;
-	
-	@NotEmpty(message="The classification cannot be empty")
 	String classification;
 	
-	@Min(value=1,message="1 ~ 6 학점 이어야만 합니다")
-	@Max(value=6,message="1 ~ 6 학점 이어야만 합니다")
+	@Min(value=1,message="1 ~ 3 학점 이어야만 합니다")
+	@Max(value=3,message="1 ~ 3 학점 이어야만 합니다")
 	int grade;
 
 	public Course(int year, int semester, String subjectCode, String subject, String classification, int grade) {
